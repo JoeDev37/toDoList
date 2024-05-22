@@ -75,6 +75,15 @@ ul li {
     position: relative;
 }
 
+ul li p {
+    display: inline;
+}
+
+ul li.checked p {
+    text-decoration: line-through;
+    color: rgb(92, 95, 119);
+}
+
 ul li::before {
     content: '🟣';
     margin-right: 10px;
