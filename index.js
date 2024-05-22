@@ -38,6 +38,14 @@ function storeDate() {
 }
 
 function showTask() {
-    listContainer.innerHTML = localStorage.getItem('store');
+    // const list = listContainer.innerHTML = localStorage.getItem('store');
+    // if (list.lenght > 0) {
+        
+    // }
+
+    const ls = localStorage.getItem('store');
+    if (ls.length > 0) {
+        listContainer.innerHTML = ls;
+    }
 }
 showTask();
