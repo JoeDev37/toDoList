@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    background: url(image2.jpg) no-repeat center / cover; 
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(24, 25, 38);
+    padding: 10px 20px 100px 20px;
+    border-radius: 10px 20px;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(138, 173, 244);
+}
+
+hr {
+    background: rgb(138, 173, 244);
+    height: 3px;
+    border: none;
+    border-radius: 10px;
+}
+
+hr:hover {
+    box-shadow: 0 0 10px 10px rgba(138, 173, 244, 0.5);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+input {
+    background-color: rgb(205, 214, 244);
+    color: rgb(24, 25, 38);
+    outline: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+input::placeholder {
+    color: rgb(24, 25, 38);
+    font-family: "Poetsen One", sans-serif;
+}
+
+button {
+    background-color: rgb(138, 173, 244);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "Poetsen One", sans-serif;
+    color: rgb(24, 25, 38);
+    cursor: pointer;
+}
+
+ul{
+    color: rgb(138, 173, 244);
+    cursor: pointer;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+
+ul li {
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: '🟣';
+    margin-right: 10px;
+}
+
+/* 🌚🌝  */
+
+ul li.checked {
+    /* text-decoration: line-through; */
+    color: rgb(92, 95, 119);
+}
+
+ul li.checked::before {
+    content: '✔️';
+    /* text-decoration: none; */
+}
+
+.custom-span {
+    color: rgb(230, 69, 83);
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-span:hover {
+    font-size: 40;
+    transition: all .10s ease-in-out;
+}
